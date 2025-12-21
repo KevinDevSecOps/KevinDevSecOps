@@ -406,46 +406,34 @@ WHERE technique_id IN (
 
 ## 📊 Diagrama de Arquitectura General
 
+# 🚀 Arquitectura Cloud-Native
+
 ```mermaid
 graph TB
-    subgraph "🔒 Security & DevSecOps Layer"
-        A[🛡️ Threat Modeling]
-        B[🔍 SAST/DAST Tools]
-        C[🔐 Secrets Management]
-        D[📜 Compliance as Code]
-    end
-
-    subgraph "☁️ Cloud & Kubernetes Layer"
-        E[🏗️ Multi-Cloud Architecture]
-        F[☸️ Kubernetes Cluster]
-        G[🔗 Service Mesh]
-        H[📦 Cloud Native Tools]
-    end
-
-    subgraph "🦀 Rust & High-Performance Layer"
-        I[⚡ Rust Microservices]
-        J[🔥 Async Runtime]
-        K[📡 gRPC/Protobuf]
-        L[🎯 Performance Optimization]
-    end
-
-    subgraph "📡 5G & Telecom Security"
-        M[📶 5G Core Security]
-        N[📡 RF Analysis Tools]
-        O[📱 Mobile Security]
-        P[🌐 Telecom Protocols]
-    end
-
-    A --> E
-    B --> F
-    C --> G
-    D --> H
+    A[Security Layer] --> B[Cloud Layer]
+    C[Performance Layer] --> B
+    B --> D[5G Telecom]
     
-    I --> M
-    J --> N
-    K --> O
-    L --> P
-```
+    subgraph Security
+        A1[Threat Modeling]
+        A2[SAST/DAST]
+    end
+    
+    subgraph Cloud
+        B1[Kubernetes]
+        B2[Multi-Cloud]
+    end
+    
+    subgraph Performance
+        C1[Rust Services]
+        C2[gRPC]
+    end
+    
+    subgraph Telecom
+        D1[5G Core]
+        D2[RF Analysis]
+    end
+
 ```
 
 🔄 Flujo de Solicitudes
