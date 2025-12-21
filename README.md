@@ -402,9 +402,7 @@ WHERE technique_id IN (
 
 ![Footer](https://github.com/KevinDevSecOps/KevinDevSecOps/blob/main/assets/footer_banner.png?raw=true)
 ```
-## 📊 Diagrama de Arquitectura General
 
-![Diagrama de Arquitectura Cloud-Native y Telecom](https://raw.githubusercontent.com/KevinDevSecOps/KevinDevSecOps/main/assets/diagrama-arquitectura.png)
 
 ```
 
