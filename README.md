@@ -445,6 +445,8 @@ graph TB
     J --> N
     K --> O
     L --> P
+```
+```
 
 🔄 Flujo de Solicitudes
 
