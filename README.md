@@ -404,35 +404,57 @@ WHERE technique_id IN (
 ```
 # 🚀 Arquitectura Cloud-Native & Telecom Security
 
-## 📊 Diagrama de Arquitectura General
+## 📊 Diagrama de Arquitectura
 
-# 🚀 Arquitectura Cloud-Native
+<div align="center">
 
 ```mermaid
-graph TB
-    A[Security Layer] --> B[Cloud Layer]
-    C[Performance Layer] --> B
-    B --> D[5G Telecom]
-    
-    subgraph Security
-        A1[Threat Modeling]
-        A2[SAST/DAST]
+flowchart TB
+    subgraph SEC["🔒 Security & DevSecOps Layer"]
+        direction LR
+        A1["🛡️ Threat Modeling"]
+        A2["🔍 SAST/DAST"]
+        A3["🔐 Secrets Mgmt"]
+        A4["📜 Compliance"]
     end
-    
-    subgraph Cloud
-        B1[Kubernetes]
-        B2[Multi-Cloud]
+
+    subgraph CLOUD["☁️ Cloud & Kubernetes"]
+        direction LR
+        B1["🏗️ Multi-Cloud"]
+        B2["☸️ Kubernetes"]
+        B3["🔗 Service Mesh"]
+        B4["📦 Cloud Tools"]
     end
-    
-    subgraph Performance
-        C1[Rust Services]
-        C2[gRPC]
+
+    subgraph RUST["🦀 Rust & Performance"]
+        direction LR
+        C1["⚡ Rust Services"]
+        C2["🔥 Async Runtime"]
+        C3["📡 gRPC/Protobuf"]
+        C4["🎯 Optimization"]
     end
-    
-    subgraph Telecom
-        D1[5G Core]
-        D2[RF Analysis]
+
+    subgraph TELECOM["📡 5G & Telecom"]
+        direction LR
+        D1["📶 5G Core"]
+        D2["📡 RF Analysis"]
+        D3["📱 Mobile Security"]
+        D4["🌐 Protocols"]
     end
+
+    SEC --> CLOUD
+    RUST --> TELECOM
+
+    %% Estilos
+    classDef security fill:#ffcccc
+    classDef cloud fill:#ccffcc
+    classDef rust fill:#ccccff
+    classDef telecom fill:#ffccff
+    
+    class A1,A2,A3,A4 security
+    class B1,B2,B3,B4 cloud
+    class C1,C2,C3,C4 rust
+    class D1,D2,D3,D4 telecom
 
 ```
 
