@@ -402,11 +402,67 @@ WHERE technique_id IN (
 
 ![Footer](https://github.com/KevinDevSecOps/KevinDevSecOps/blob/main/assets/footer_banner.png?raw=true)
 ```
+
+# 🏗️ Arquitectura Completa
+
 <div align="center">
 
-# 🏗️ Diagrama Arquitectural
+```mermaid
+graph TB
+    %% ===== CAPA 1: SEGURIDAD =====
+    subgraph SG1["🔒 Security & DevSecOps Layer"]
+        A1["🛡️ Threat Modeling"]
+        A2["🔍 SAST/DAST Tools"]
+        A3["🔐 Secrets Management"]
+        A4["📜 Compliance as Code"]
+    end
 
-<img src="https://mermaid.ink/img/eyJjb2RlIjoiZ3JhcGggVEJcbiAgICBBW1wi8J-Mo1wiXSAtLT4gQltcIvCfkKFcIl1cbiAgICBDW1wi8J-KhVwiXSAtLT4gRFtcIvCfkaFcIl1cblxuICAgIHN1YmdyYXBoIEFbXCJTZWN1cml0eVwiXVxuICAgICAgICBBMVsi8J-Mo1wiXVxuICAgICAgICBBMlsi8J-Mo1wiXVxuICAgIGVuZFxuXG4gICAgc3ViZ3JhcGggQltcIkNsb3VkXCJdXG4gICAgICAgIEIxWyLwn5ChXCJdXG4gICAgICAgIEIyWyLwn5ChXCJdXG4gICAgZW5kIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifX0" width="600"/>
+    %% ===== CAPA 2: CLOUD =====
+    subgraph SG2["☁️ Cloud & Kubernetes Layer"]
+        B1["🏗️ Multi-Cloud Arch"]
+        B2["☸️ Kubernetes Cluster"]
+        B3["🔗 Service Mesh"]
+        B4["📦 Cloud Native Tools"]
+    end
+
+    %% ===== CAPA 3: RUST =====
+    subgraph SG3["🦀 Rust & High-Performance"]
+        C1["⚡ Rust Microservices"]
+        C2["🔥 Async Runtime"]
+        C3["📡 gRPC/Protobuf"]
+        C4["🎯 Performance Optimization"]
+    end
+
+    %% ===== CAPA 4: TELECOM =====
+    subgraph SG4["📡 5G & Telecom Security"]
+        D1["📶 5G Core Security"]
+        D2["📡 RF Analysis Tools"]
+        D3["📱 Mobile Security"]
+        D4["🌐 Telecom Protocols"]
+    end
+
+    %% ===== CONEXIONES =====
+    A1 --> B1
+    A2 --> B2
+    A3 --> B3
+    A4 --> B4
+    
+    C1 --> D1
+    C2 --> D2
+    C3 --> D3
+    C4 --> D4
+
+    %% ===== ESTILOS =====
+    classDef seguridad fill:#ffcccc,stroke:#333,stroke-width:2px
+    classDef cloud fill:#ccffcc,stroke:#333,stroke-width:2px
+    classDef rust fill:#ccccff,stroke:#333,stroke-width:2px
+    classDef telecom fill:#ffccff,stroke:#333,stroke-width:2px
+    
+    class A1,A2,A3,A4 seguridad
+    class B1,B2,B3,B4 cloud
+    class C1,C2,C3,C4 rust
+    class D1,D2,D3,D4 telecom
+```
 
 </div>
 
