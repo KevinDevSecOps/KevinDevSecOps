@@ -402,59 +402,13 @@ WHERE technique_id IN (
 
 ![Footer](https://github.com/KevinDevSecOps/KevinDevSecOps/blob/main/assets/footer_banner.png?raw=true)
 ```
-# 🚀 Arquitectura Cloud-Native & Telecom Security
-
-## 📊 Diagrama de Arquitectura
-
 <div align="center">
 
-```mermaid
-flowchart TB
-    subgraph SEC["🔒 Security & DevSecOps Layer"]
-        direction LR
-        A1["🛡️ Threat Modeling"]
-        A2["🔍 SAST/DAST"]
-        A3["🔐 Secrets Mgmt"]
-        A4["📜 Compliance"]
-    end
+# 🏗️ Diagrama Arquitectural
 
-    subgraph CLOUD["☁️ Cloud & Kubernetes"]
-        direction LR
-        B1["🏗️ Multi-Cloud"]
-        B2["☸️ Kubernetes"]
-        B3["🔗 Service Mesh"]
-        B4["📦 Cloud Tools"]
-    end
+<img src="https://mermaid.ink/img/eyJjb2RlIjoiZ3JhcGggVEJcbiAgICBBW1wi8J-Mo1wiXSAtLT4gQltcIvCfkKFcIl1cbiAgICBDW1wi8J-KhVwiXSAtLT4gRFtcIvCfkaFcIl1cblxuICAgIHN1YmdyYXBoIEFbXCJTZWN1cml0eVwiXVxuICAgICAgICBBMVsi8J-Mo1wiXVxuICAgICAgICBBMlsi8J-Mo1wiXVxuICAgIGVuZFxuXG4gICAgc3ViZ3JhcGggQltcIkNsb3VkXCJdXG4gICAgICAgIEIxWyLwn5ChXCJdXG4gICAgICAgIEIyWyLwn5ChXCJdXG4gICAgZW5kIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifX0" width="600"/>
 
-    subgraph RUST["🦀 Rust & Performance"]
-        direction LR
-        C1["⚡ Rust Services"]
-        C2["🔥 Async Runtime"]
-        C3["📡 gRPC/Protobuf"]
-        C4["🎯 Optimization"]
-    end
-
-    subgraph TELECOM["📡 5G & Telecom"]
-        direction LR
-        D1["📶 5G Core"]
-        D2["📡 RF Analysis"]
-        D3["📱 Mobile Security"]
-        D4["🌐 Protocols"]
-    end
-
-    SEC --> CLOUD
-    RUST --> TELECOM
-
-    %% Estilos
-    classDef security fill:#ffcccc
-    classDef cloud fill:#ccffcc
-    classDef rust fill:#ccccff
-    classDef telecom fill:#ffccff
-    
-    class A1,A2,A3,A4 security
-    class B1,B2,B3,B4 cloud
-    class C1,C2,C3,C4 rust
-    class D1,D2,D3,D4 telecom
+</div>
 
 ```
 
