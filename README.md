@@ -403,6 +403,10 @@ WHERE technique_id IN (
 ![Footer](https://github.com/KevinDevSecOps/KevinDevSecOps/blob/main/assets/footer_banner.png?raw=true)
 ```
 
+```markdown
+# 🚀 Arquitectura Cloud-Native & Telecom Security
+
+## 📊 Diagrama de Arquitectura General
 
 ```mermaid
 graph TB
@@ -434,34 +438,6 @@ graph TB
         P[🌐 Telecom Protocols]
     end
 
-    subgraph "🤖 AI & Machine Learning"
-        Q[🧠 ML Ops Pipeline]
-        R[📊 Threat Intelligence]
-        S[🔮 Predictive Analytics]
-        T[🎯 Anomaly Detection]
-    end
-
-    subgraph "🔄 CI/CD & Automation"
-        U[⚙️ GitOps Workflows]
-        V[🔁 ArgoCD Flux]
-        W[🧪 Testing Automation]
-        X[🚀 Deployment Pipelines]
-    end
-
-    subgraph "📊 Monitoring & Observability"
-        Y[📈 Prometheus Stack]
-        Z[📊 Grafana Dashboards]
-        AA[🔍 Distributed Tracing]
-        BB[🚨 Alert Management]
-    end
-
-    subgraph "🗃️ Data & Storage Layer"
-        CC[💾 TimescaleDB]
-        DD[🔗 Blockchain Storage]
-        EE[☁️ S3 Compatible]
-        FF[📁 IPFS Integration]
-    end
-
     A --> E
     B --> F
     C --> G
@@ -471,16 +447,9 @@ graph TB
     J --> N
     K --> O
     L --> P
-    
-    Q --> U
-    R --> V
-    S --> W
-    T --> X
-    
-    Y --> CC
-    Z --> DD
-    AA --> EE
-    BB --> FF
+```
+
+🔄 Flujo de Solicitudes
 
 ```mermaid
 sequenceDiagram
@@ -504,8 +473,9 @@ sequenceDiagram
     M->>O: Metrics & Logs
     O->>O: Aggregation
     O->>O: Analysis & Alerting
+```
 
-🎯 Arquitectura de Microservicios
+🏗️ Arquitectura de Microservicios
 
 ```mermaid
 graph LR
@@ -546,6 +516,16 @@ graph LR
     C --> N[(Elasticsearch)]
     D --> O[(MySQL)]
 ```
+
+🛠️ Tecnologías Principales
+
+· Lenguajes: Rust, Go, Python
+· Infraestructura: Kubernetes, Docker, Terraform
+· Cloud: AWS, GCP, Azure
+· Bases de Datos: PostgreSQL, TimescaleDB, Redis
+· Monitoreo: Prometheus, Grafana, Jaeger
+
+---
 <!--
 **KevinDevSecOps/KevinDevSecOps** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
