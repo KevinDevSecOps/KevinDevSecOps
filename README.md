@@ -403,6 +403,7 @@ WHERE technique_id IN (
 ![Footer](https://github.com/KevinDevSecOps/KevinDevSecOps/blob/main/assets/footer_banner.png?raw=true)
 ```
 
+
 ```mermaid
 graph TB
     subgraph "🔒 Security & DevSecOps Layer"
@@ -503,7 +504,6 @@ sequenceDiagram
     M->>O: Metrics & Logs
     O->>O: Aggregation
     O->>O: Analysis & Alerting
-```
 
 🎯 Arquitectura de Microservicios
 
