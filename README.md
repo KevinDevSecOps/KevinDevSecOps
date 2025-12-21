@@ -402,11 +402,11 @@ WHERE technique_id IN (
 
 ![Footer](https://github.com/KevinDevSecOps/KevinDevSecOps/blob/main/assets/footer_banner.png?raw=true)
 ```
-```markdown
 # 🚀 Arquitectura Cloud-Native & Telecom Security
 
-
 ## 📊 Diagrama de Arquitectura General
+
+```mermaid
 graph TB
     subgraph "🔒 Security & DevSecOps Layer"
         A[🛡️ Threat Modeling]
@@ -445,7 +445,6 @@ graph TB
     J --> N
     K --> O
     L --> P
-```
 
 🔄 Flujo de Solicitudes
 
