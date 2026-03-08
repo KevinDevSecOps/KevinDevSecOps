@@ -168,7 +168,7 @@ _"Mira, abuela: soy como un cerrajero digital.
 📱 Examino tus aparatos "listos" (que a veces no son tan listos)  
 🛡️ Enseño a las empresas cómo proteger sus cosas  
 💼 Y todo legal, ¡que conste en acta!"_  
-## 🚀 **Tech Stack 2024 (Como si lo explicara a mi abuela)**  
+## 🚀 **Tech Stack  (Como si lo explicara a mi abuela)**  
 *"Mira abuela, estos son mis 'juguetes' profesionales:"*  
 
 ### 📻 **Radio Defined Software (SDR)**
