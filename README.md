@@ -4,7 +4,10 @@
 </h1>
 
 
-
+<div align="center">
+  <!-- Gráfico de actividad reciente -->
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=KevinDevSecOps&theme=react-dark&bg_color=000000&hide_border=true&area=true&radius=16" width="100%"/>
+</div>
 
 
 ---
