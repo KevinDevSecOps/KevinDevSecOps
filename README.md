@@ -5,6 +5,46 @@
 
 
 
+
+
+---
+
+<div align="center">
+  
+  <!-- Fila 1: Estadísticas Generales -->
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=KevinDevSecOps&show_icons=true&theme=nightowl&include_all_commits=true&count_private=true&hide_border=true&border_radius=15"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KevinDevSecOps&layout=compact&langs_count=8&theme=nightowl&hide_border=true&border_radius=15&hide=html,css,javascript&exclude_repo=github-readme-stats"/>
+
+  <!-- Fila 2: Gráfico de Actividad (Terminal Style) -->
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=KevinDevSecOps&theme=react-dark&bg_color=000000&hide_border=true&area=true&radius=16" width="95%"/>
+
+  <!-- Fila 3: Trofeos Relevantes -->
+  <img src="https://github-profile-trophy.vercel.app/?username=KevinDevSecOps&theme=darkhub&no-frame=true&row=1&column=7&margin-w=15&title=Stars,Followers,Repositories,Commit,Issues,PullRequest,Reviews"/>
+
+  <!-- Fila 4: Stack Técnico (Lo más importante para un perfil como el tuyo) -->
+  <h3>🛠️ Arsenal Técnico & SDR Stack</h3>
+  <img src="https://skillicons.dev/icons?i=rust,cpp,python,bash,powershell,linux,kali,aws,gcp,kubernetes,docker,terraform,arduino,raspberrypi,grafana,prometheus&perline=8" />
+
+  <!-- Fila 5: Insignias de Estado -->
+  <a href="https://github.com/KevinDevSecOps/Redteam-ttacticks-ps-byCK">
+    <img src="https://img.shields.io/badge/CK_TTPs-ACTUALIZADO_2024-red?style=for-the-badge&logo=github&logoColor=white&labelColor=black" />
+  </a>
+  <img src="https://img.shields.io/badge/RED_TEAM-OPERATIONS-8A2BE2?style=for-the-badge&logo=kalilinux&logoColor=white" />
+
+</div>
+
+---
+<h1 align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=38BDF8&center=true&vCenter=true&width=500&lines=¡Hola!+Soy+KevinDevSecOps;Hacker+de+RF+y+Security+Engineer" alt="Podria ser SENIOR si no fuera por mi aspecto JUNIOR ">
+</h1>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=KevinDevSecOps&label=Profile+Views&color=blue&style=flat" alt="Visitas al perfil">
+  
+  <a href="kpcoolkids@gmail.com"><img src="https://img.shields.io/badge/-Email-D14836?style=flat&logo=gmail&logoColor=white" alt="Email"></a>
+</p>
+
+---
 <div align="center">
   
   ``` 
@@ -48,45 +88,6 @@
 |-------------|-------------|-----------|
 | [PortaPack-Havoc-Mod](https://github.com/KevinDevSecOps/PortaPack-Havoc-Mod-KevDevSecOps) | Firmware avanzado para pentesting RF | <img src="https://img.shields.io/github/stars/KevinDevSecOps/PortaPack-Havoc-Mod-KevDevSecOps?style=flat-square" width="80"> |
 | [RF-Hacking-Tools](https://github.com/KevinDevSecOps/RF-Hacking-Tools) | Colección de scripts para análisis de espectro | <img src="https://img.shields.io/github/stars/KevinDevSecOps/RF-Hacking-Tools?style=flat-square" width="80"> |
-
----
-
-<div align="center">
-  
-  <!-- Fila 1: Estadísticas Generales -->
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=KevinDevSecOps&show_icons=true&theme=nightowl&include_all_commits=true&count_private=true&hide_border=true&border_radius=15"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KevinDevSecOps&layout=compact&langs_count=8&theme=nightowl&hide_border=true&border_radius=15&hide=html,css,javascript&exclude_repo=github-readme-stats"/>
-
-  <!-- Fila 2: Gráfico de Actividad (Terminal Style) -->
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=KevinDevSecOps&theme=react-dark&bg_color=000000&hide_border=true&area=true&radius=16" width="95%"/>
-
-  <!-- Fila 3: Trofeos Relevantes -->
-  <img src="https://github-profile-trophy.vercel.app/?username=KevinDevSecOps&theme=darkhub&no-frame=true&row=1&column=7&margin-w=15&title=Stars,Followers,Repositories,Commit,Issues,PullRequest,Reviews"/>
-
-  <!-- Fila 4: Stack Técnico (Lo más importante para un perfil como el tuyo) -->
-  <h3>🛠️ Arsenal Técnico & SDR Stack</h3>
-  <img src="https://skillicons.dev/icons?i=rust,cpp,python,bash,powershell,linux,kali,aws,gcp,kubernetes,docker,terraform,arduino,raspberrypi,grafana,prometheus&perline=8" />
-
-  <!-- Fila 5: Insignias de Estado -->
-  <a href="https://github.com/KevinDevSecOps/Redteam-ttacticks-ps-byCK">
-    <img src="https://img.shields.io/badge/CK_TTPs-ACTUALIZADO_2024-red?style=for-the-badge&logo=github&logoColor=white&labelColor=black" />
-  </a>
-  <img src="https://img.shields.io/badge/RED_TEAM-OPERATIONS-8A2BE2?style=for-the-badge&logo=kalilinux&logoColor=white" />
-
-</div>
-
----
-<h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=38BDF8&center=true&vCenter=true&width=500&lines=¡Hola!+Soy+KevinDevSecOps;Hacker+de+RF+y+Security+Engineer" alt="Podria ser SENIOR si no fuera por mi aspecto JUNIOR ">
-</h1>
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=KevinDevSecOps&label=Profile+Views&color=blue&style=flat" alt="Visitas al perfil">
-  
-  <a href="kpcoolkids@gmail.com"><img src="https://img.shields.io/badge/-Email-D14836?style=flat&logo=gmail&logoColor=white" alt="Email"></a>
-</p>
-
----
 
 ### 🛠 **Stack Tecnológico**
 ```python
