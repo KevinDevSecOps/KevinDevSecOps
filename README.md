@@ -51,7 +51,12 @@
 
 ---
 
-
+<div align="center">
+  <!-- Estadísticas Generales con tema Night Owl (más elegante) -->
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=KevinDevSecOps&show_icons=true&theme=nightowl&include_all_commits=true&count_private=true&hide_border=true&border_radius=15"/>
+  <!-- Lenguajes más usados, excluyendo los típicos de frontend para mostrar tu stack real -->
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KevinDevSecOps&layout=compact&langs_count=8&theme=nightowl&hide_border=true&border_radius=15&hide=html,css,javascript&exclude_repo=github-readme-stats"/>
+</div>
 
 ---
 <h1 align="center">
