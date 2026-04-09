@@ -4,10 +4,21 @@
 </h1>
 
 
-<div align="center">
-  <!-- Gráfico de actividad reciente -->
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=KevinDevSecOps&theme=react-dark&bg_color=000000&hide_border=true&area=true&radius=16" width="100%"/>
-</div>
+# 📊 ESTADÍSTICA GENERAL
+
+```
+
+╔══════════════════════════════════════════════════════════════╗
+║                    📈 BOLETÍN DE CALIFICACIONES               ║
+╠══════════════════════════════════════════════════════════════╣
+║                                                              ║
+║   Pentesting RF/SDR      : ████████████████████░  95%  A     ║
+║   Red Team TTPs          : ██████████████████░░░  90%  A     ║
+║   Desarrollo (Rust/C++)  : ████████████████░░░░░  80%  B+    ║
+║   IoT/Hardware Hacking   : ████████████████░░░░░  78%  B+    ║
+║   Cloud/DevSecOps        : ██████████████░░░░░░░  70%  B     ║
+║                                                              ║
+╠══════════════════════════════════════════════════════════════
 
 
 ---
