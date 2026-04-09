@@ -1,24 +1,7 @@
 
 
   <img src="https://readme-typing-svg.demolab.com?font=Hack&weight=800&size=35&duration=4000&pause=1000&color=00FF00&background=000000&center=true&vCenter=true&width=600&height=80&lines=%5B%2A%2A%2A%5D+ACCESO+OBTENIDO+%5B%2A%2A%2A%5D;KEVIN_DEV_SEC_OPS+%40ROOT%24%3A~%2F%23+INIT" alt="Acceso Gained">
-</h1>
-
-
-# 📊 ESTADÍSTICA GENERAL
-
-```
-
-╔══════════════════════════════════════════════════════════════╗
-║                    📈 BOLETÍN DE CALIFICACIONES               ║
-╠══════════════════════════════════════════════════════════════╣
-║                                                              ║
-║   Pentesting RF/SDR      : ████████████████████░  95%  A     ║
-║   Red Team TTPs          : ██████████████████░░░  90%  A     ║
-║   Desarrollo (Rust/C++)  : ████████████████░░░░░  80%  B+    ║
-║   IoT/Hardware Hacking   : ████████████████░░░░░  78%  B+    ║
-║   Cloud/DevSecOps        : ██████████████░░░░░░░  70%  B     ║
-║                                                              ║
-╠══════════════════════════════════════════════════════════════
+</
 
 
 ---
