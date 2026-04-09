@@ -4,7 +4,11 @@
 </h1>
 
 
-
+<div align="center">
+  <h3>🛠️ Arsenal Técnico</h3>
+  <!-- Iconos de habilidades técnicas -->
+  <img src="https://skillicons.dev/icons?i=rust,cpp,python,bash,powershell,linux,kali,aws,gcp,kubernetes,docker,terraform,arduino,raspberrypi,grafana,prometheus&perline=8" />
+</div>
 
 
 ---
