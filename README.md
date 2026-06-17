@@ -182,41 +182,164 @@ def execute():
 </div>
 
 > **Disclaimer:** No me hago responsable si usas esto para hacer que el microondas mine Bitcoin  
-> — Con cariño hacker, KevinDevSecOps
+> — Con cariño hacker, Kevin CK.
+
+```markdown
+## 🔬 **Laboratorio de Ingeniería Inversa**
+
+<div align="center">
+
+[![Hardware Hacking](https://img.shields.io/badge/Hardware_Hacking-★_Core_Skill-FF6600?style=for-the-badge&logo=raspberrypi&logoColor=white)](https://github.com/KevinDevSecOps)
+[![Firmware RE](https://img.shields.io/badge/Firmware_RE-Advanced-8A2BE2?style=for-the-badge&logo=ghidra&logoColor=white)](https://github.com/KevinDevSecOps)
+[![IoT Exploitation](https://img.shields.io/badge/IoT_Exploitation-0--days_Found-FF0000?style=for-the-badge&logo=chip&logoColor=white)](https://github.com/KevinDevSecOps)
+
+</div>
 
 ---
-🧬 Ingeniería Inversa & Hardware Hacking
 
-reverse_engineering = {
-    "🔌 Hardware Interfaces": {
-        "UART": {
-            "tools": ["FT232H", "Bus Pirate", "Logic Analyzer"],
-            "técnicas": [
-                "Identificación de pines TX/RX/GND con multímetro",
-                "Baudrate detection automática con logic analyzer",
-                "Bypass de UART password prompts en routers IoT",
-                "Extracción de bootlogs para mapeo de memoria"
-            ]
-        },
-        "JTAG/SWD": {
-            "tools": ["J-Link EDU", "OpenOCD", "pyOCD"],
-            "técnicas": [
-                "Debugging de firmware ARM Cortex-M en vivo",
-                "Dumping de flash protegida vía JTAG boundary scan",
-                "Unlocking de debug ports deshabilitados por fuses",
-                "Análisis de TrustZone-M con depuración por SWD"
-            ]
-        },
-        "SPI/I2C": {
-            "tools": ["Saleae Logic Pro 8", "Beagle I2C/SPI Analyzer"],
-            "técnicas": [
-                "Sniffing de tráfico SPI entre MCU y flash externa",
-                "Captura de handshakes I2C de sensores (temperatura/humedad)",
-                "Replay attacks en buses I2C no autenticados",
-                "Extracción de claves AES de EEPROM vía I2C"
-            ]
-        }
-    },
+### 🔌 **Interfaces Hardware** — *Donde la magia comienza*
+
+<div align="center">
+
+| 🎯 Interfaz | ⚡ Herramientas | 🛠️ Técnicas Reales |
+|:-----------:|:---------------:|:-------------------|
+| **UART** | `FT232H` `Bus Pirate` | • Identificación TX/RX/GND con osciloscopio<br>• By-pass de prompts de contraseña<br>• Extracción de bootlogs para mapeo |
+| **JTAG/SWD** | `J-Link EDU` `OpenOCD` | • Debugging en vivo de ARM Cortex-M<br>• Unlock de fuses de protección<br>• Dump de flash vía boundary scan |
+| **SPI/I2C** | `Saleae Logic Pro` `Beagle` | • Sniffing MCU ↔ Flash externa<br>• Captura handshakes de sensores<br>• Extracción de EEPROMs 24Cxx |
+
+</div>
+
+```python
+# 🎯 Identificación de UART (método del pobre)
+import machine
+from time import sleep
+
+# 1. Buscar GND con continuidad
+# 2. Probar pines con osciloscopio a 115200 baudios
+# 3. Conectar y rezar
+uart = machine.UART(2, baudrate=115200, tx=17, rx=16)
+while True:
+    if uart.any():
+        print(f"📥 Bootlog: {uart.read()}")
+```
+
+---
+
+🧠 Firmware: De Binario a Código Fuente
+
+```mermaid
+graph LR
+    A[🔧 Extracción] -->|"flashrom"| B[📦 Archivo .bin]
+    B -->|"binwalk -Me"| C[📂 Sistema Archivos]
+    C -->|"Ghidra/IDA"| D[📝 Pseudocódigo]
+    D -->|"Análisis"| E[💀 Vulnerabilidad]
+    
+    style A fill:#FF6600,color:white
+    style B fill:#333,color:white
+    style C fill:#8A2BE2,color:white
+    style D fill:#00BFFF,color:black
+    style E fill:#FF0000,color:white
+```
+
+<details>
+<summary><b>📋 Pipeline Completo de Extracción</b></summary>```bash
+# 🔓 Método 1: Chip Clamp (sin desoldar)
+flashrom -p ch341a_spi -r firmware_dump.bin
+
+# 🔓 Método 2: Vía U-Boot (si hay shell)
+# Interrumpir boot y:
+md 0x80000000  # Leer memoria física
+
+# 🔓 Método 3: OTA Intercept (ESP32/ESP8266)
+mitmproxy -p 8080 --ssl-insecure
+# La actualización cae sola 😈
+```
+
+</details><details>
+<summary><b>🔍 Técnicas de Análisis Favoritas</b></summary>Técnica Herramienta Resultado Típico
+Strings + Grep strings firmware.bin | grep -E 'key|pass|secret' 🔑 API keys, contraseñas
+Entropía binwalk -E firmware.bin 🔐 Secciones cifradas/comprimidas
+Diff de versiones kdiff3 v1.bin v2.bin 🩹 Parches de seguridad (o backdoors)
+Firmwalker ./firmwalker.sh /extracted/ 🗺️ Mapa de archivos peligrosos
+
+</details>---
+
+💣 Explotación IoT — Cuando las defensas fallan
+
+<div align="center">🎯 Ataque ⚡ Dificultad 🛡️ Bypass
+Voltage Glitching █████░░░░░ • Bootloader desbloqueado • Readout Protection (RDP) off
+Power Analysis (CPA) ████████░░ • Claves AES extraídas • ~2000 trazas necesarias
+EM Fault Injection █████████░ • Saltos de instrucción • Verificación de firmas bypasseada
+
+</div>```python
+# ⚡ Script básico de Voltage Glitching con Crowbar
+import machine
+import time
+
+# Configurar MOSFET para cortar VCC
+glitch_pin = machine.Pin(4, machine.Pin.OUT)
+
+def glitch_attack(duration_us=10):
+    """Corta la alimentación por microsegundos"""
+    glitch_pin.off()
+    time.sleep_us(duration_us)  # ¡El pulso mágico!
+    glitch_pin.on()
+    
+# Normalmente requiere cientos de intentos...
+for i in range(1000):
+    glitch_attack()
+    if check_if_unlocked():  # ¿RDP desactivado?
+        print(f"🎉 ¡Glitch exitoso en intento {i}!")
+        break
+```
+
+---
+
+🏆 Hallazgos Reales
+
+<div align="center">https://img.shields.io/badge/CVEs_Encontrados-3-FF0000?style=flat-square
+https://img.shields.io/badge/Firmwares_Extraídos-25+-brightgreen?style=flat-square
+https://img.shields.io/badge/Bootloaders_Desbloqueados-5-9cf?style=flat-square
+
+</div>```yaml
+📊 Resultados por Año:
+  2024: "3 CVEs (buffer overflow HTTP parser, hardcoded creds, UART shell)"
+  2023: "12 dispositivos (routers, cámaras IP, enchufes inteligentes)"
+  2022: "Bypass Secure Boot en router Mediatek vía glitching ⚡"
+  2021: "Primer dump flash exitoso (Sonoff básico)... ¡se hace camino al andar!"
+```
+
+---
+
+📸 Setup de Laboratorio
+
+<div align="center">🔬 Estación de Trabajo 📡 RF & Wireless 🔧 Herramientas Físicas
+Saleae Logic Pro 8 HackRF One Estación de soldadura
+SPI/I2C/UART sniffing SDR hasta 6 GHz Extracción de chips
+J-Link EDU Mini Proxmark3 Easy Microscopio Digital
+Debugging ARM SWD/JTAG RFID/NFC clonación Inspección PCB 500x
+ChipWhisperer Lite Flipper Zero Bus Pirate v4
+Side-Channel Power Analysis Sub-GHz + BLE + RFID Interfaz universal GPIO
+
+</div>---
+
+<div align="center">```ascii
+    ⚡ VOLTAGE GLITCHING
+    [VCC]───[MOSFET]───[TARGET MCU]
+              │
+              └── [Pulse 10µs] 💀 RDP OFF
+    
+    📻 SIGNAL ANALYSIS
+    [HackRF]───[GNU Radio]───[Wireshark] 🔓
+    
+    🔑 MEMORY DUMPING
+    [SOIC8 Clip]───[CH341a]───[flashrom] 💾
+```
+
+
+https://img.shields.io/badge/¿Quieres_ver_mi_lab%3F-📸_Fotos_en_Twitter-1DA1F2?style=for-the-badge
+
+</div>
     
     "🧠 Firmware Reverse Engineering": {
         "Extracción": {
