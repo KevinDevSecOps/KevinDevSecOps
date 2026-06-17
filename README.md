@@ -192,27 +192,85 @@ def execute():
 ---
 🧬 Ingeniería Inversa & Hardware Hacking
 
-```python
 reverse_engineering = {
-    "🔌 Interfaces Físicas": {
-        "UART": "Extracción de firmware vía consola serial",
-        "JTAG/SWD": "Debugging y dumping de memoria en chips ARM",
-        "SPI/I2C": "Sniffing de comunicaciones entre microcontroladores",
-        "Logic Analyzer": "Análisis de señales digitales con Saleae"
+    "🔌 Hardware Interfaces": {
+        "UART": {
+            "tools": ["FT232H", "Bus Pirate", "Logic Analyzer"],
+            "técnicas": [
+                "Identificación de pines TX/RX/GND con multímetro",
+                "Baudrate detection automática con logic analyzer",
+                "Bypass de UART password prompts en routers IoT",
+                "Extracción de bootlogs para mapeo de memoria"
+            ]
+        },
+        "JTAG/SWD": {
+            "tools": ["J-Link EDU", "OpenOCD", "pyOCD"],
+            "técnicas": [
+                "Debugging de firmware ARM Cortex-M en vivo",
+                "Dumping de flash protegida vía JTAG boundary scan",
+                "Unlocking de debug ports deshabilitados por fuses",
+                "Análisis de TrustZone-M con depuración por SWD"
+            ]
+        },
+        "SPI/I2C": {
+            "tools": ["Saleae Logic Pro 8", "Beagle I2C/SPI Analyzer"],
+            "técnicas": [
+                "Sniffing de tráfico SPI entre MCU y flash externa",
+                "Captura de handshakes I2C de sensores (temperatura/humedad)",
+                "Replay attacks en buses I2C no autenticados",
+                "Extracción de claves AES de EEPROM vía I2C"
+            ]
+        }
     },
-    "🧠 Firmware Analysis": {
-        "Binwalk": "Extracción de sistemas de archivos embebidos",
-        "Ghidra": "Decompilación de binarios ARM/MIPS/x86",
-        "QEMU": "Emulación de firmware IoT para análisis dinámico",
-        "Radare2": "Análisis forense de bootloaders y kernels"
+    
+    "🧠 Firmware Reverse Engineering": {
+        "Extracción": {
+            "flash_read": "Desoldering + lector SOP8/SOIC16 con flashrom",
+            "spi_dump": "Chip clip directo sin desoldar con Pomona 5250",
+            "uart_bootloader": "Interrupción de U-Boot para dump de particiones",
+            "ota_intercept": "Captura de firmware OTA con proxy MITM en ESP32"
+        },
+        "Análisis Estático": {
+            "binwalk": "Extracción de filesystems (SquashFS, JFFS2, YAFFS)",
+            "ghidra_scripts": "Scripts propios para identificar funciones de crypto",
+            "fingerprinting": "Detección de CVEs por hash de binarios conocidos",
+            "hardcoded_secrets": "Búsqueda de API keys y certs privados embebidos"
+        },
+        "Análisis Dinámico": {
+            "qemu_full_system": "Emulación completa de firmware ARM/MIPS con -M virt",
+            "frida_iot": "Instrumentación de binarios ELF en dispositivos rooted",
+            "gdbserver": "Debug remoto de servicios vulnerables en vivo",
+            "unblob": "Pipeline automatizado de extracción multi-nivel"
+        },
+        "Casos Reales": [
+            "🔓 Extracción de firmware cifrado de router TP-Link vía U-Boot shell",
+            "📡 Backdoor en IP camera: credenciales en /etc/shadow con hash débil",
+            "🔑 Clave privada RSA en strings de binario de cerradura inteligente",
+            "💊 Dispositivo médico con actualizaciones OTA sin firma verificada"
+        ]
     },
-    "💣 IoT Exploitation": {
-        "EEPROM Dumping": "Lectura directa de chips de memoria flash",
-        "Glitching": "Ataques de fault injection con Crowbar/Voltage Fault",
-        "Side-Channel": "Power analysis básico con ChipWhisperer"
+    
+    "💣 Técnicas de Explotación": {
+        "Fault Injection": {
+            "voltage_glitching": "Crowbar + Mosfet para bypass de readout protection",
+            "em_fault": "PicoEMP para saltar instrucciones de verificación de firma",
+            "laser_fault": "Ataque básico con laser pointer a decapsulados (teórico/practicado)",
+            "resultado": "Bootloader desbloqueado en MCU STM32F4 con RDP nivel 1"
+        },
+        "Side-Channel": {
+            "power_analysis": "ChipWhisperer Lite + capture de trazas CPA",
+            "timing_attack": "Análisis de tiempo en verificación de PINs (Python + osciloscopio)",
+            "em_analysis": "Sonda H-Field para capturar emanaciones de AES-128",
+            "resultado": "Clave de 16 bytes recuperada en 2000 trazas"
+        },
+        "EEPROM/Flash Attacks": {
+            "i2c_eeprom": "Lectura de configuraciones en 24C02 sin protección",
+            "spi_flash": "Modificación de particiones de firmware en W25Q64",
+            "nand_glitch": "Bypass de bad block markers en NAND flash",
+            "resultado": "MAC address y serial numbers modificados para bypass de auth"
+        }
     }
 }
-```
 
 📡 Radiofrecuencia & Wireless
 
