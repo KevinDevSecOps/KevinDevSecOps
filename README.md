@@ -183,11 +183,6 @@ def execute():
 
 > **Disclaimer:** No me hago responsable si usas esto para hacer que el microondas mine Bitcoin  
 > — Con cariño hacker, KevinDevSecOps
-```
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=KevinDevSecOps&show_icons=true&theme=radical" alt="Estadísticas GitHub">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KevinDevSecOps&layout=compact&theme=dark&hide=html,css" alt="Lenguajes más usados">
-</div>
 
 ---
 🧬 Ingeniería Inversa & Hardware Hacking
