@@ -68,8 +68,8 @@
 ```yaml
 hacker:
   nombre: "Kevin"
-  alias: "KaliNova"
-  rol: "Red Team Operator | Reverse Engineer"
+  alias: "CoolKiids"
+  rol: "Iot Architech | Red Team Operator | Reverse Engineer"
   experiencia: "8+ años"
   especialidades:
     - "IoT Hardware Hacking (UART/JTAG/SPI)"
