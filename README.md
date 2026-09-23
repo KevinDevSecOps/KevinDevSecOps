@@ -163,6 +163,36 @@ def execute():
 ! ∞ ganas de seguir aprendiendo
 ```
 
+## 🎤 Charlas y Contribuciones Públicas
+
+Como parte de mi compromiso con la comunidad, he tenido la oportunidad de compartir conocimiento y colaborar en los siguientes espacios:
+
+- **NoConName 2021** — Charla: *"RFID Hacking con Flipper Zero"* (Barcelona)
+- **Hack&Beers Barcelona** — Lightning Talk: *"UART: El camino secreto a los bootlogs"*
+- **Contribuciones a proyectos Open Source**: Colaboraciones en herramientas de análisis de firmware y scripts para Flipper Zero.
+
+> *"El conocimiento no sirve de nada si no se comparte. Siempre aprendo más dando una charla que asistiendo a ella."*
+---
+## 🏢 Experiencia en Fortune 500
+
+Mi trabajo no se limita al laboratorio. He tenido el privilegio de aplicar mis conocimientos en entornos corporativos de alto nivel, incluyendo:
+
+- **Auditorías de Seguridad IoT** para empresas del **Fortune 500**.
+- **Red Team Operations** en infraestructuras críticas, con foco en evasión de EDR y movimiento lateral.
+- **Consultoría en DevSecOps**: Implementación de pipelines seguros en Kubernetes y HashiCorp Vault.
+
+> *"Trabajar en Fortune 500 te da la perspectiva de que un fallo en un dispositivo puede tumbar una compañía entera. Y de que los hackers también usamos traje."*
+
+## 🗣️ Lo que dicen de mí
+
+> *"Kevin no es solo un experto en hardware hacking, es un comunicador nato. Su charla sobre RFID nos dejó a todos con la boca abierta."*  
+> — **Asistente en NoConName 2021**
+
+> *"Trabajar con él en la auditoría de nuestro sistema de control industrial fue un antes y un después. Encontró vulnerabilidades que ni sabíamos que existían."*  
+> — **CISO, Empresa Fortune 500 (anónimo)**
+
+> *"El mejor reverse engineer con el que he colaborado. Su metodología es rigurosa y sus scripts ahorran semanas de trabajo."*  
+> — **Investigador de Seguridad, Proyecto Open Source**
 ---
 
 ## 🤝 ¿Quieres Unirte al Caos?
